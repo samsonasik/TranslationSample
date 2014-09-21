@@ -1,0 +1,13 @@
+<?php
+
+//title
+$title  = $this->translate('Address') . ' Form';
+$this->headTitle($title);
+
+$form = $this->form;
+
+$form->prepare();
+
+echo $this->form()->openTag($form);
+echo $this->formCollection($form);
+echo $this->form()->closeTag();
